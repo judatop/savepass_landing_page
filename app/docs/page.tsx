@@ -3,6 +3,7 @@
 import AccountDocs from "@/components/docs/account-docs";
 import CardDocs from "@/components/docs/card-docs";
 import PasswordDocs from "@/components/docs/password-docs";
+import RepositoriesDocs from "@/components/docs/repositories-docs";
 import TechDocs from "@/components/docs/tech-docs";
 import { useLanguage } from "@/components/language-provider";
 import { motion } from "framer-motion";
@@ -44,6 +45,7 @@ export default function DocsPage() {
               <PasswordDocs />
               <CardDocs />
               <TechDocs />
+              <RepositoriesDocs />
             </motion.div>
           </div>
         </div>
