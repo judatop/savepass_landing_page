@@ -10,8 +10,6 @@ import {
   Smartphone,
   Code,
   Download,
-  Cloud,
-  Wifi,
   Layers,
   Lock,
   ScanFace,
