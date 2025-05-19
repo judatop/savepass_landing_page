@@ -1,13 +1,7 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
 import { useLanguage } from "@/components/language-provider";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MessageSquare, CheckCircle } from "lucide-react";
 
 export default function ContactPage() {

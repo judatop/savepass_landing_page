@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/privacy"
+                  href="/policy"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   {translations.privacy}
