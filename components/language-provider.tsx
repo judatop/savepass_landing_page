@@ -205,7 +205,9 @@ const translations: Record<Language, Translations> = {
     messageLabel: "Message",
     submitButton: "Send Message",
     thankYou: "Thank you for your message. We'll get back to you soon!",
-    scanQrCode: "Scan the QR code with your mobile device to download the app",
+    // scanQrCode: "Scan the QR code with your mobile device to download the app",
+    scanQrCode:
+      "SavePass is currently being uploaded to the iOS and Android stores, so it will be available for download soon.",
     iosInstructions:
       "Open your camera app and point it at the QR code to download from the App Store",
     androidInstructions:
@@ -402,7 +404,7 @@ const translations: Record<Language, Translations> = {
     submitButton: "Enviar Mensaje",
     thankYou: "Gracias por tu mensaje. Te responderemos pronto!",
     scanQrCode:
-      "Escanea el código QR con tu dispositivo móvil para descargar la aplicación",
+      "SavePass esta en proceso de carga en las tiendas de iOS y Android, asi que estará disponible muy pronto para descargar.",
     iosInstructions:
       "Abre la aplicación de la cámara y apúntala al código QR para descargar desde App Store",
     androidInstructions:
