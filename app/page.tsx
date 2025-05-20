@@ -281,19 +281,18 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex overflow-x-auto gap-8 pb-6 snap-x"
+            className="flex overflow-x-auto gap-8 pb-6 snap-x snap-mandatory"
           >
             {screenshots.map((item) => (
               <div
                 key={item.id}
-                className="min-w-[280px] h-[560px] snap-center rounded-2xl overflow-hidden shadow-lg flex-shrink-0 p-2 border border-gray-100 dark:border-transparent dark:bg-[#0A0A0D]"
+                className="relative min-w-[280px] h-[560px] snap-center rounded-2xl overflow-hidden shadow-lg flex-shrink-0 p-2 border border-gray-100 dark:border-transparent dark:bg-[#0A0A0D]"
               >
                 <Image
                   src={theme === "light" ? item.path : item.darkPath}
-                  alt={`App Screenshot ${item}`}
-                  width={320}
-                  height={600}
-                  className="object-cover w-full h-full"
+                  alt={`App Screenshot ${item.id}`}
+                  fill
+                  className="object-cover"
                 />
               </div>
             ))}
