@@ -150,6 +150,9 @@ type Translations = {
   contactMailText: string;
   contactPhoneText: string;
   contactMIT: string;
+  openAndroid: string;
+  openIOS: string;
+  downloadInstructions: string;
 };
 
 const translations: Record<Language, Translations> = {
@@ -349,6 +352,10 @@ const translations: Record<Language, Translations> = {
     contactMailText: "Email",
     contactPhoneText: "Phone Number",
     contactMIT: "MIT Licence",
+    openAndroid: "Go to PlayStore",
+    openIOS: "Go to AppStore",
+    downloadInstructions:
+      "Scan the QR code or click the button to download the app",
   },
   es: {
     home: "Inicio",
@@ -547,6 +554,10 @@ const translations: Record<Language, Translations> = {
     contactMailText: "Correo",
     contactPhoneText: "Teléfono",
     contactMIT: "MIT Licencia",
+    openAndroid: "Ir a PlayStore",
+    openIOS: "Ir a AppStore",
+    downloadInstructions:
+      "Escanea el código QR o haz clic en el botón para descargar la aplicación",
   },
 };
 
