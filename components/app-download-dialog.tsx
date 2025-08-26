@@ -8,14 +8,18 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useLanguage } from "@/components/language-provider";
-import Image from "next/image";
 import { Apple, SmartphoneIcon as Android, Link } from "lucide-react";
 import { Button } from "./ui/button";
+import { QRCodeSVG } from "qrcode.react";
 
 interface AppDownloadDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
+
+const APP_STORE_URL = "https://apps.apple.com/us/app/savepass/id6751149518";
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.juda.savepass";
 
 export default function AppDownloadDialog({
   open,
@@ -42,18 +46,19 @@ export default function AppDownloadDialog({
               App Store
             </h3>
             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-white p-2 rounded-lg mb-2 sm:mb-4">
-              <Image
-                src="/placeholder.svg?height=200&width=200"
-                alt="iOS QR Code"
+              <QRCodeSVG
+                value={APP_STORE_URL}
                 width={200}
                 height={200}
                 className="w-full h-full"
               />
             </div>
             <div className="flex flex-row mt-4">
-              <Button size="lg" onClick={() => {}}>
-                {translations.openIOS}
-              </Button>
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+                <Button size="lg" onClick={() => {}}>
+                  {translations.openIOS}
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -63,9 +68,8 @@ export default function AppDownloadDialog({
               Google Play
             </h3>
             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-white p-2 rounded-lg mb-2 sm:mb-4">
-              <Image
-                src="/androidqr.png?height=200&width=200"
-                alt="Android QR Code"
+              <QRCodeSVG
+                value={PLAY_STORE_URL}
                 width={200}
                 height={200}
                 className="w-full h-full"
@@ -73,7 +77,7 @@ export default function AppDownloadDialog({
             </div>
             <div className="flex flex-row mt-4">
               <a
-                href="https://play.google.com/store/apps/details?id=com.juda.savepass"
+                href={PLAY_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >

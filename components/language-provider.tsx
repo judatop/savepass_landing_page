@@ -352,8 +352,8 @@ const translations: Record<Language, Translations> = {
     contactMailText: "Email",
     contactPhoneText: "Phone Number",
     contactMIT: "MIT Licence",
-    openAndroid: "Go to PlayStore",
-    openIOS: "Go to AppStore",
+    openAndroid: "View on Play Store",
+    openIOS: "View on App Store",
     downloadInstructions:
       "Scan the QR code or click the button to download the app",
   },
@@ -554,8 +554,8 @@ const translations: Record<Language, Translations> = {
     contactMailText: "Correo",
     contactPhoneText: "Teléfono",
     contactMIT: "MIT Licencia",
-    openAndroid: "Ir a PlayStore",
-    openIOS: "Ir a AppStore",
+    openAndroid: "Ver en Play Store",
+    openIOS: "Ver en App Store",
     downloadInstructions:
       "Escanea el código QR o haz clic en el botón para descargar la aplicación",
   },
